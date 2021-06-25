@@ -1,0 +1,108 @@
+.mobile-transactionDetails-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .mobile-block {
+    margin-top: .78rem;
+    background-color: white;
+    border-radius: .2rem;
+    box-shadow: 0px .2rem .42rem .12rem rgba(186, 177, 212, 0.16);
+  }
+  .mobile-transactionDetails-body {
+    flex: 1;
+    overflow: auto;
+    padding: 1.08rem .68rem;
+    &::-webkit-scrollbar { width: 0 }
+    .mobile-transactionDetails-head {
+      padding: .98rem 1.52rem .1rem;
+      div {
+        display: flex;
+        margin-bottom: .66rem;
+        font-size: .56rem;
+        span {
+          width: 1.92rem;
+          position: relative;
+          color: #666;
+          &::before {
+            content: '';
+            width: .1rem;
+            height: .1rem;
+            border-radius: 50%;
+            @include background-color('primary');
+            position: absolute;
+            left: -0.4rem;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+        img {
+          width: .56rem;
+          height: .56rem;
+         position: relative;
+         top: .1rem;
+        }
+        p {
+          @include font-color('primary');
+          
+          flex: 1;
+          word-break:break-all
+          // overflow: hidden;
+          // text-overflow: ellipsis;
+
+        }
+      }
+    }
+    .mobile-transactionDetails-body-detail {
+      flex: 1;
+      background: white;
+      padding: .36rem .16rem;
+      border-radius: .2rem;
+      .transactionDetails-body-title {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #F6F4FB;
+        padding-bottom: .3rem;
+        img {
+          width: .56rem;
+          height: .58rem;
+          margin-right: .14rem;
+        }
+        p {
+          font-size: .56rem;
+          @include font-color('primary');
+          font-weight: bolder;
+        }
+      }
+      .mobile-transactionDetails-body-detail-item {
+        padding: .4rem 0.2rem .4rem 0.9rem;
+        border-bottom: 1px solid #F6F4FB;
+        display: flex;
+        align-items: center;
+        color: #666;
+        font-size: .48rem;
+        p {
+          width: 2rem;
+        }
+        .address-detial {
+          @include font-color('primary')
+        }
+        div {
+          flex: 1;
+          padding-left: 1.7rem;
+          display: flex;
+          align-items: center;
+          white-space: pre-wrap;
+          word-break:break-all;
+          img {
+            margin-left: .1rem;
+            width: .48rem;
+            height: .48rem;
+          }
+        }
+        .owned-block {
+          @include font-color('primary')
+        }
+      }
+    }
+  }
+}
