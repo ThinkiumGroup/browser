@@ -1,0 +1,94 @@
+
+/* 改变主题色变量 */
+$--color-primary: #9568FF;
+
+
+$themeColor: #7D4AFF;
+
+
+$tabsFontSize: 18px;
+
+
+$tabsActiveWidth: 108px;
+
+
+  .el-form-item__label {
+    font-size: 17px;
+  }
+  .color-choose {  //高亮可以点击的样式
+    color: $themeColor;
+    cursor: pointer;
+  }
+
+  /deep/ .el-button--primary {
+    background-color: $themeColor;
+    border-color: $themeColor;
+  }
+
+  /deep/ .el-tabs__item.is-active {
+    color: $themeColor;
+  }
+
+  /deep/ .el-tabs__active-bar {
+    background-color: $themeColor;
+  }
+
+  /deep/ .el-tabs__item:hover {
+    color: $themeColor;
+  }
+
+  /deep/ .el-tabs__item {
+    font-size: $tabsFontSize;
+  }
+
+  /deep/ .el-tabs__active-bar {
+    width: $tabsActiveWidth;
+  }
+
+  /deep/ .el-select .el-input.is-focus .el-input__inner {
+    border-color: $themeColor;
+  }
+
+  /deep/ .el-select .el-input__inner:focus {
+    border-color: $themeColor;
+  }
+
+  /deep/ .el-select-dropdown__item.selected {
+    color: $themeColor;
+  }
+
+  /deep/ .el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: $themeColor;
+  }
+
+
+
+
+
+.main-title{
+  color: #333;
+  font-size: 0.36rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0.36rem;
+  padding-top: 0.28rem;
+  padding-bottom: 0.54rem;
+}
+
+.common-block {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 21px 6px rgba(186, 177, 212, 0.16);
+  border-radius: 0.1rem;
+}
+
+.common-header {
+  @extend .common-block;
+  height: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.eventRowBg {
+  background-color: #E8DFFF!important;
+}
